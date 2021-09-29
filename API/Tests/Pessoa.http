@@ -1,0 +1,18 @@
+### Cadastrar uma nova pessoa
+POST https://localhost:5001/api/pessoa/create
+Content-Type: application/json
+
+{
+
+    "Nome" : "Bryan",
+    "Sobrenome" : "Machado",
+    "Cpf" : "456",
+    "Idade" : "35",
+    "Telefone" : "999999"
+}
+
+### Listar todos os enfermeiros
+GET https://localhost:5001/api/pessoa/list
+
+### Deletar um pessoa pelo nome
+DELETE https://localhost:5001/api/pessoa/delete/Bryan
